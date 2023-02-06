@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorting-Visualizer</title>
+  </head>
+  <header>
+    <h1 align="center">Sorting-Visualizer</h1>
+    <nav>
+      <div class="row">
+        <div class="col gap-2 d-sm-flex" id="newArray">
+          <button class="btn btn-outline-primary btn-dark newArray">
+            New Array
+          </button>
+        </div>
+
+        <div class="col" id="input">
+          <span id="size"
+            >Size
+            <input
+              id="arr_size"
+              type="range"
+              min="5"
+              max="100"
+              step="10"
+              value="60"
+            />
+          </span>
+
+          <span id="speed"
+            >speed
+            <input
+              id="speed_input"
+              type="range"
+              min="20"
+              max="300"
+              stepDown="10"
+              value="60"
+            />
+          </span>
+        </div>
+        <div class="col gap-2 d-sm-flex justify-content-end">
+          <button
+            type="button"
+            class="btn btn-outline-success btn-dark bubbleSort"
+          >
+            Bubble-Sort
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-success btn-dark selectionSort"
+          >
+            Selection-Sort
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-success btn-dark insertionSort"
+          >
+            Insertion-Sort
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-success btn-dark quickSort"
+          >
+            Quick-Sort
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-success btn-dark mergeSort"
+          >
+            Merge-Sort
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body class="p-3 mb-2 bg-secondary text-white">
+    <div id="bar" class="flex-container"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javaScript/sorting.js"></script>
+    <script src="javaScript/bubbleSort.js"></script>
+    <script src="javaScript/inserionSort.js"></script>
+    <script src="javaScript/mergeSort.js"></script>
+    <script src="javaScript/quickSort.js"></script>
+    <script src="javaScript/selectionSort.js"></script>
+  </body>
+</html>
